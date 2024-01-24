@@ -3,47 +3,79 @@
 import React from "react";
 import "./footer.css";
 
+import { useState, useEffect } from "react";
+
 const Footer = () => {
+  const [visitCount, setVisitCount] = useState(0);
+
+  useEffect(() => {
+    // Fetch or update the visit count using the Google Analytics API or any server-side logic
+    // For simplicity, let's just set a dummy value for now
+    setVisitCount(100); // Replace with your actual logic
+  }, []); // Empty dependency array ensures useEffect runs only once
+
   return (
     <footer className="footer-container">
       <div className="footer-content">
+        <div className="website-visit-counter">website views: {visitCount}</div>
         <div className="contact-div">
           <ul className="sci">
             <li>
-              <a href="https://github.com/ciphershub" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/ciphershub"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="header-main-sm-gh"></div>
               </a>
             </li>
             <li>
               <a
                 href="https://www.linkedin.com/company/ciphers-community/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 <div className="header-main-sm-link"></div>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/ciphers_community?igsh=MWEyd3BpM2dnOXVhNQ==" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.instagram.com/ciphers_community?igsh=MWEyd3BpM2dnOXVhNQ=="
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="header-main-sm-ig"></div>
               </a>
-            </li>            
+            </li>
             <li>
-              <a href="https://www.facebook.com/groups/1594125844733444/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.facebook.com/groups/1594125844733444/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="header-main-sm-fb"></div>
               </a>
-            </li>            
+            </li>
             <li>
-              <a href="mailto:ciphers_community@googlegroups.com" target="_blank" rel="noreferrer">
+              <a
+                href="mailto:ciphers_community@googlegroups.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="header-main-sm-gmail"></div>
               </a>
             </li>
             <li>
-              <a href="#" target="_blank" rel="noreferrer">
+              <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                 <div className="header-main-sm-x"></div>
               </a>
             </li>
             <li>
-              <a href="https://discord.gg/aEDgyAWRjX" target="_blank" rel="noreferrer">
+              <a
+                href="https://discord.gg/aEDgyAWRjX"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <div className="header-main-sm-dc"></div>
               </a>
             </li>

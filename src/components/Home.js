@@ -90,36 +90,7 @@ const Home = () => {
 
         <div className="about-us" ref={aboutUsRef}>
           <div className="about-section vision-mission">
-            <h2>VISION</h2>
-            <p className="vm-heading">
-              &quot; Empowering Minds, Igniting Innovation &quot;
-            </p>
-            <p>
-              <br />
-              <br />
-              Ciphers Club, recognized as the top tech community, envisions a
-              future where minds are empowered through the language of code,
-              fostering innovation, collaboration, and limitless possibilities.
-            </p>
-          </div>
-          <div className="about-section vision-mission">
-            <h2>MISSION</h2>
-            <p className="vm-heading">
-              &quot; Charting the Future of Tech Excellence &quot;
-            </p>
-            <p>
-              <br />
-              <br />
-              Our mission is to provide the best dynamic platform where students
-              explore, learn, and innovate in the realms of coding, technology,
-              and entrepreneurship. Through a commitment to excellence,
-              collaboration, continuous learning, and the development of
-              essential soft skills, we aim to shape visionary leaders who will
-              redefine the landscape of technology.
-            </p>
-          </div>
-          <div className="about-section vision-mission">
-            <h2>OBJECTIVES</h2>
+            <h2>OBJECTIVES OF OUR CLUB</h2>
             <ul className="objectives">
               <li>
                 Foster Innovation: Voted the best club for encouraging creative
@@ -167,45 +138,37 @@ const Home = () => {
 
           <div className="about-section club-body">
             <h2>THE TEAM</h2>
-            {/* <div>
-              <div className="cards">
-                <img src="hod-card.png" alt="card-pfp"></img>
-                <p className="name">Dr. S. V. Athawle</p>
-                <p className="designation">HOD</p>
-              </div>
-            </div> 
-            <div>
-              <div className="cards">
-                <div className="card-content">
-                  <img
-                    src="staff-card.png"
-                    alt="card-pfp"
-                    className="card-pfp"
-                  ></img>
-                  <p className="name">Vipul S. Gunjal</p>
-                  <p className="designation">Staff</p>
-                </div>
-              </div>
-              <div className="cards">
-                <div className="card-content">
-                  <img
-                    src="staff-card.png"
-                    alt="card-pfp"
-                    className="card-pfp"
-                  ></img>
-                  <p className="name">XYZ</p>
-                  <p className="designation">Staff</p>
-                </div>
-              </div>
-            </div>*/}
             <div className="leadership-team">
               <div className="cards">
                 <div className="card-content">
                   <img
-                    src="students-card.png"
+                    src="aryan-chouksey-pfp.png"
                     alt="card-pfp"
                     className="card-pfp"
                   ></img>
+                  <div className="social-media-icons">
+                    <a
+                      href="https://www.instagram.com/i_am_a_ryan_86/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="ig-2-2.png" alt="Instagram" />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/i_am_a_ryan_86/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="github-2-2.png" alt="GitHub" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/aryan-chouksey/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="li-2-2.png" alt="LinkedIn" />
+                    </a>
+                  </div>
                   <p className="name">Aryan Chouksey</p>
                   <p className="designation">students co-lead</p>
                 </div>
@@ -213,10 +176,33 @@ const Home = () => {
               <div className="cards">
                 <div className="card-content">
                   <img
-                    src="students-card.png"
+                    src="aryan-choudhary-pfp.png"
                     alt="card-pfp"
                     className="card-pfp"
                   ></img>
+                  <div className="social-media-icons">
+                    <a
+                      href="https://www.instagram.com/aryan.c193/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="ig-2-2.png" alt="Instagram" />
+                    </a>
+                    <a
+                      href="https://github.com/aryanc193"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="github-2-2.png" alt="GitHub" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/aryan-choudhary-arry193/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="li-2-2.png" alt="LinkedIn" />
+                    </a>
+                  </div>
                   <p className="name">Aryan Choudhary</p>
                   <p className="designation">students co-lead</p>
                 </div>
@@ -224,10 +210,33 @@ const Home = () => {
               <div className="cards">
                 <div className="card-content">
                   <img
-                    src="students-card.png"
+                    src="aniket-pfp.png"
                     alt="card-pfp"
                     className="card-pfp"
                   ></img>
+                  <div className="social-media-icons">
+                    <a
+                      href="https://www.instagram.com/aniket_dhakane/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="ig-2-2.png" alt="Instagram" />
+                    </a>
+                    <a
+                      href="https://github.com/watashiwaaniket"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="github-2-2.png" alt="GitHub" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/aniket-dhakane-9b06a125b/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="li-2-2.png" alt="LinkedIn" />
+                    </a>
+                  </div>
                   <p className="name">Aniket Dhakane</p>
                   <p className="designation">students co-lead</p>
                 </div>
@@ -235,10 +244,33 @@ const Home = () => {
               <div className="cards">
                 <div className="card-content">
                   <img
-                    src="students-card.png"
+                    src="aditya-pfp.png"
                     alt="card-pfp"
                     className="card-pfp"
                   ></img>
+                  <div className="social-media-icons">
+                    <a
+                      href="https://www.instagram.com/the_quantum_legend/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="ig-2-2.png" alt="Instagram" />
+                    </a>
+                    <a
+                      href="https://github.com/Quantum-Legend"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="github-2-2.png" alt="GitHub" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/aditya-mahale-adi2003/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="li-2-2.png" alt="LinkedIn" />
+                    </a>
+                  </div>
                   <p className="name">Aditya Mahale</p>
                   <p className="designation">students co-lead</p>
                 </div>
@@ -246,10 +278,33 @@ const Home = () => {
               <div className="cards">
                 <div className="card-content">
                   <img
-                    src="students-card.png"
+                    src="joseph-pfp.png"
                     alt="card-pfp"
                     className="card-pfp"
                   ></img>
+                  <div className="social-media-icons">
+                    <a
+                      href="https://www.instagram.com/j0sh_seph/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="ig-2-2.png" alt="Instagram" />
+                    </a>
+                    <a
+                      href="https://github.com/J0seph-Mart1n"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="github-2-2.png" alt="GitHub" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/joseph-martin-656360228/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img src="li-2-2.png" alt="LinkedIn" />
+                    </a>
+                  </div>
                   <p className="name">Joseph Martin</p>
                   <p className="designation">students co-lead</p>
                 </div>

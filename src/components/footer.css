@@ -1,114 +1,129 @@
 /* footer.css */
-:root{
- --icon-size-phone: 60px;
+:root {
+  --icon-size: 60px;
 }
 .footer-container {
-    background-color: #f5c5ff; /* Adjust the background color as needed */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    color: #444444;
-  }
+  background-color: #f5c5ff; /* Adjust the background color as needed */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+}
 
-  .contact-div {
-    width: 100%;
-    height: fit-content;
-    padding: 1rem;
-    margin-bottom: -1rem;
-    margin-top: 0.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .sci {
-    display: flex;
-    width: 90%;
-    height: 70px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-justify-content: space-evenly;
-    padding: 0.5rem;
-    list-style: none;
-  }
-  
-  .sci div{
-    filter: grayscale(100%);
-  }
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #444444;
+}
 
-  .sci div:hover{
-    filter: grayscale(0);
-  }
-  
-  .header-main-sm-ig {
-    width: var(--icon-size-phone);
-    height: var(--icon-size-phone);
-    background-image: url(../../public/ig-2-2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-  }
-  
-  .header-main-sm-gh {
-    width: var(--icon-size-phone);
-    height: var(--icon-size-phone);
-    background-image: url(../../public/github-2-2.png);
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    background-size: cover;
-  }
-  
-  .header-main-sm-tg {
-    width: var(--icon-size-phone);
-    height: var(--icon-size-phone);
-    background-image: url(../../public/tg-2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .header-main-sm-link {
-    width: var(--icon-size-phone);
-    height: var(--icon-size-phone);
-    background-image: url(../../public/li-2-2.png);
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    background-size: cover;
-  }
-  
-  .header-main-sm-dc {
-    width: var(--icon-size-phone);
-    height: var(--icon-size-phone);
-    background-image: url(../../public/discord-2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .header-main-sm-gmail {
-    width: var(--icon-size-phone);
-    height: var(--icon-size-phone);
-    background-image: url(../../public/gmail-2-2.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .header-main-sm-fb {
-    width: var(--icon-size-phone);
-    height: var(--icon-size-phone);
-    background-image: url(../../public/fblogo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .header-main-sm-x {
-    width: 50px;
-    height: 50px;
-    background-image: url(../../public/xlogo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+.website-visit-counter {
+  width: fit-content;
+  padding: 1%;
+  font-family: 'Roboto', Arial;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #000;
+  text-shadow: 2px 2px 15px #000000;
+  font-weight: 600;
+}
+
+.contact-div {
+  width: 100%;
+  height: fit-content;
+  padding: 1rem;
+  margin-bottom: -1rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sci {
+  display: flex;
+  width: 90%;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.sci div {
+  filter: grayscale(100%);
+}
+
+.sci div:hover {
+  filter: grayscale(0);
+}
+
+.header-main-sm-ig {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-image: url(../../public/ig-2-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.header-main-sm-gh {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-image: url(../../public/github-2-2.png);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.header-main-sm-tg {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-image: url(../../public/tg-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-main-sm-link {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-image: url(../../public/li-2-2.png);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.header-main-sm-dc {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-image: url(../../public/discord-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-main-sm-gmail {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-image: url(../../public/gmail-2-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-main-sm-fb {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-image: url(../../public/fblogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-main-sm-x {
+  width: 50px;
+  height: 50px;
+  background-image: url(../../public/xlogo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
