@@ -9,10 +9,18 @@ const Footer = () => {
   const [visitCount, setVisitCount] = useState(0);
 
   useEffect(() => {
-    // Fetch or update the visit count using the Google Analytics API or any server-side logic
-    // For simplicity, let's just set a dummy value for now
-    setVisitCount(100); // Replace with your actual logic
-  }, []); // Empty dependency array ensures useEffect runs only once
+    // Increment view count in Google Analytics
+    window.gtag('event', 'page_view');
+
+    // Fetch the current view count from Google Analytics (optional)
+    window.gtag('config', 'G-N9GJRQWTPE', {
+      'send_to': 'G-N9GJRQWTPE',
+      'event_callback': function() {
+        const newVisitCount = window.gtag.getNumUsers();
+        setVisitCount(newVisitCount);
+      }
+    });
+  }, []);
 
   return (
     <footer className="footer-container">
