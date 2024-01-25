@@ -1,7 +1,7 @@
 // UpcomingEventsModal.js
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import '../App.css'; // Import the CSS file for styling
-import { useLocation } from 'react-router-dom';
 
 const UpcomingEventsModal = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -18,19 +18,22 @@ const UpcomingEventsModal = () => {
 
   const toggleModal = () => {
     // Use the current state to determine the next state
-    setIsOpen(prevState => !prevState);
+    setIsOpen((prevState) => !prevState);
   };
 
   return (
     <div className={`upcoming-events-modal ${isOpen ? 'open' : 'closed'}`}>
       {/* Add a button to close the modal */}
       <button className="close-button" onClick={toggleModal}>
-        <img src='down-arrow.png' alt='down arrow'/>
+        <img src='down-arrow.png' alt='down arrow' />
       </button>
       {/* Your modal content goes here */}
       <div className="modal-content">
         <p>Upcoming Events</p>
-        <img src='event.jpg' alt='events-mini'/>
+        {/* Use Link to make the image a clickable link */}
+        <Link to="/events" onClick={toggleModal}>
+          <img src='event.jpg' alt='events-mini' />
+        </Link>
       </div>
     </div>
   );
