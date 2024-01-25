@@ -86,12 +86,16 @@ nav button {
   bottom: 3.5%;
   right: 1.5%;
   width: 20%;
-  background-color: #fff;
+  background: linear-gradient(0deg, #fff 0%, #ffffff00 100%);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
   z-index: 5000;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .upcoming-events-modal.closed {
@@ -101,7 +105,7 @@ nav button {
 
 .modal-content {
   padding: 2%;
-  color: #000000;
+  color: #fff;
 }
 
 .modal-content img{
@@ -111,11 +115,15 @@ nav button {
 .close-button {
   width: 100%;
   padding: 2%;
-  background-color: #007bff;
+  background: transparent;
   color: #fff;
   border: none;
   cursor: pointer;
   margin-bottom: -3%;
+}
+
+.close-button img{
+  filter: invert(1);
 }
 
 .closed .close-button img{

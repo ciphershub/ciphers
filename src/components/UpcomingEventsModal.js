@@ -32,7 +32,7 @@ const UpcomingEventsModal = () => {
         <p>Upcoming Events</p>
         {/* Use Link to make the image a clickable link */}
         <Link to="/events" onClick={toggleModal}>
-          <img src='event.jpg' alt='events-mini' />
+          <img src='event.png' alt='events-mini' />
         </Link>
       </div>
     </div>
