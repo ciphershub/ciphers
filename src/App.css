@@ -14,6 +14,7 @@ body {
   background-color: var(--primary-color);
   backdrop-filter: brightness(75%);
   color: #fff;
+  overflow-y: hidden;
 }
 
 .app-container {
@@ -82,23 +83,45 @@ nav button {
 /* UpcomingEventsModal.css */
 .upcoming-events-modal {
   position: fixed;
-  z-index: 5000;
-  bottom: 1.5%;
+  bottom: 3.5%;
   right: 1.5%;
   width: 20%;
-  background-color: #f0f0f0;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  z-index: 5000;
+}
+
+.upcoming-events-modal.closed {
+  transform: translateY(100%);
+  background: none;
 }
 
 .modal-content {
-  display: flex;
-  flex-direction: column;
+  padding: 2%;
+  color: #000000;
 }
 
-.close {
-  align-self: flex-end;
+.modal-content img{
+  width: 100%;
+}
+
+.close-button {
+  width: 100%;
+  padding: 2%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
   cursor: pointer;
-  font-size: 20px;
+  margin-bottom: -3%;
+}
+
+.closed .close-button img{
+  transform: rotate(180deg);
+}
+
+.closed .modal-content p, .closed .modal-content img, .closed .modal-content{
+  opacity: 0;
 }

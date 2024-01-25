@@ -2,7 +2,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../App.css";
 import "./home.css";
-import Events from "./UpcomingEventsModal";
 import Footer from "./Footer";
 
 const Home = () => {
@@ -13,10 +12,8 @@ const Home = () => {
   const aboutUsRef = useRef(null);
 
   useEffect(() => {
-    const sentences = ["XJQYVDW", "KLOHWBR", "FSPZUMT", "NCDITLX", "CIPHERS"];
-    // "YBGHAJU",
-    // "URMJVKT",
-    const currentText = sentences[sentenceIndex];
+    const sentences = ["XJQYVDW", "KLOHWBR", "FSPZUMT", "CIPHERS"];
+    //  "NCDITLX", "FSPZUMT", "YBGHAJU","URMJVKT",
     let hackingIntervalId;
 
     const generateRandomChars = (length) => {
@@ -30,25 +27,37 @@ const Home = () => {
 
     const startHackingAnimation = () => {
       hackingIntervalId = setInterval(() => {
-        if (charIndex <= currentText.length) {
-          // Hacking Animation: Displaying random characters in place of each letter
-          setRandomChars(generateRandomChars(currentText.length - charIndex));
-          setCurrentWord(currentText.substring(0, charIndex));
-          setCharIndex((prevCharIndex) => prevCharIndex + 1);
-        } else if (currentWord !== "CIPHERS") {
-          // Wait for a pause before starting the next word
-          clearInterval(hackingIntervalId);
+        const currentText = sentences[sentenceIndex];
 
-          setTimeout(() => {
-            setCharIndex(0);
-            setSentenceIndex((prevIndex) => (prevIndex + 1) % sentences.length);
-            startHackingAnimation();
-          }, 300); // Adjust the pause before typing the next word
+        // Check if the sentenceIndex is within the valid range
+        if (currentText) {
+          if (charIndex <= currentText.length) {
+            // Hacking Animation: Displaying random characters in place of each letter
+            setRandomChars(generateRandomChars(currentText.length - charIndex));
+            setCurrentWord(currentText.substring(0, charIndex));
+            setCharIndex((prevCharIndex) => prevCharIndex + 1);
+          } else if (currentWord !== "CIPHERS") {
+            // Wait for a pause before starting the next word
+            clearInterval(hackingIntervalId);
+
+            setTimeout(() => {
+              setCharIndex(0);
+              // Update the sentenceIndex in a way that ensures it's within the valid range
+              setSentenceIndex(
+                (prevIndex) => (prevIndex + 1) % sentences.length
+              );
+              startHackingAnimation();
+            }, 100); // Adjust the pause before typing the next word
+          }
+        } else {
+          // Handle the case where the sentenceIndex is out of bounds
+          console.error("Invalid sentenceIndex:", sentenceIndex);
+          clearInterval(hackingIntervalId);
         }
       }, 50); // Adjust the speed of hacking animation by changing the interval duration
     };
 
-    startHackingAnimation(); // Start hacking animation on component mount
+    startHackingAnimation();
 
     // Cleanup on component unmount
     return () => {
@@ -314,7 +323,6 @@ const Home = () => {
         </div>
       </div>
       <Footer />
-      <Events />
     </div>
   );
 };
