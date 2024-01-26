@@ -1,31 +1,15 @@
-// Footer.js
+// src/Footer.js
+import React from 'react';
 
-import React from "react";
-import "./footer.css";
-
-import { useState, useEffect } from "react";
+import './footer.css';
 
 const Footer = () => {
-  const [visitCount, setVisitCount] = useState(0);
-
-  useEffect(() => {
-    // Increment view count in Google Analytics
-    window.gtag('event', 'page_view');
-
-    // Fetch the current view count from Google Analytics (optional)
-    window.gtag('config', 'G-N9GJRQWTPE', {
-      'send_to': 'G-N9GJRQWTPE',
-      'event_callback': function() {
-        const newVisitCount = window.gtag.getNumUsers();
-        setVisitCount(newVisitCount);
-      }
-    });
-  }, []);
+  
 
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        <div className="website-visit-counter">website views: {visitCount}</div>
+        <div className="website-visit-counter">website views: 24</div>
         <div className="contact-div">
           <ul className="sci">
             <li>

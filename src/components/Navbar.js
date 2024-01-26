@@ -7,11 +7,11 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar" style={{ position: "fixed", top: 0, width: "100%", zIndex: 1000}}>
+      <div className="navbar" style={{ position: "fixed", top: 0, width: "100%", zIndex: 100}}>
         <nav>
           <div className="logo">
             <img
-              src="cipher-logo.png"
+              src="cipher-logo-removebg.png"
               className="logo-img"
               alt="Ciphers Logo"
             />
@@ -22,6 +22,7 @@ const Navbar = () => {
             <Link to="/competitions">Competitions</Link>
             <Link to="/resources">Resources</Link>
             <Link to="/startups">Startups</Link>
+            <Link to="/contactus"><nobr>Contact Us</nobr></Link>
           </div>
         </nav>
       </div>

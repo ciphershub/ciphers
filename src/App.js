@@ -1,15 +1,14 @@
 // App.js
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Events from "./components/Events";
 import Competitions from "./components/Competitions";
 import Resources from "./components/Resources";
 import Startups from "./components/Startups";
-import UpcomingEventsModal from "./components/UpcomingEventsModal";
+import ContactUs from "./components/ContactUs";
 import "./App.css";
-import './components/home.css';
 
 function App() {
   return (
@@ -22,8 +21,8 @@ function App() {
           <Route path="/competitions" element={<Competitions />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/startups" element={<Startups />} />
+          <Route path="/contactus" element={<ContactUs />} />
         </Routes>
-        <UpcomingEventsModal />
       </Router>
     </div>
   );

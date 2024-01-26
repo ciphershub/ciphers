@@ -1,5 +1,5 @@
 /* Events.css */
-.events-container {
+.events-container, .competitions-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +9,7 @@
 .slider {
   position: relative;
   height: 91vh;
+  width: 100vw;
   top: 60px;
   overflow: hidden;
   display: flex;
@@ -82,7 +83,7 @@
   margin-bottom: 1rem;
 }
 
-.go-to-previous-events{
+.go-to-previous-events, .go-to-previous-competitions{
     background: none;
     color: #fff;
     border: none;
@@ -92,8 +93,6 @@
     align-items: center;
     padding: 0.8rem;
 }
-
-.go-to-previous-events 
 
 .down-arrow {
   filter: invert(100);
@@ -128,12 +127,8 @@
   border-radius: 20px;
 }
 
-.event-img {
+.event-img, .competition-img {
   width: 100%;
   filter: grayscale(100%) brightness(50%);
 }
 
-.upcoming-events-modal{
-    display: none;
-    pointer-events: none;
-}

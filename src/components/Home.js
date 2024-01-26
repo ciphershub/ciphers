@@ -3,6 +3,8 @@ import React, { useEffect, useState, useRef } from "react";
 import "../App.css";
 import "./home.css";
 import Footer from "./Footer";
+import UpcomingEventsModal from "./UpcomingEventsModal";
+
 
 const Home = () => {
   const [sentenceIndex, setSentenceIndex] = useState(0);
@@ -322,6 +324,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <UpcomingEventsModal />
       <Footer />
     </div>
   );
