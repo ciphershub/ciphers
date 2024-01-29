@@ -4,7 +4,7 @@
 
 :root {
   --primary-color: #9d00ff;
-  --secondary-color: #ffd900;
+  --secondary-color: #fffb00;
   --text-color: #fff;
   --bg-color: #000000;
 }
@@ -27,7 +27,7 @@ body, html {
   margin: 0;
 }
 
-nav {
+.navbar {
   position: fixed;
   width: 100%;
   height: 60px;
@@ -41,7 +41,7 @@ nav {
   z-index: 5000;
 }
 
-nav a {
+.navbar a {
   text-decoration: none;
   color: var(--text-color); /* Font color for normal state */
   font-weight: bold;
@@ -49,11 +49,11 @@ nav a {
   transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
+.navbar a:hover {
   color: var(--secondary-color);
 }
 
-nav button {
+.navbar button {
   cursor: pointer;
 }
 
@@ -78,6 +78,14 @@ nav button {
   justify-content: space-evenly;
   gap: 10%;
   text-transform: uppercase;
+}
+
+.burger-menu{
+  display: none;
+}
+
+.overlay{
+  display: none;
 }
 
 /* UpcomingEventsModal.css */
@@ -132,4 +140,117 @@ nav button {
 
 .closed .modal-content p, .closed .modal-content img, .closed .modal-content{
   opacity: 0;
+}
+
+
+@media screen and (min-width: 150px) and (max-width: 1300px) {
+  .navbar {
+    /* Add or adjust styles for the navbar in the media query */
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: var(--bg-color);
+    align-items: center;
+    padding: 10px;
+    color: #ffffff;
+    z-index: 5000;
+  }
+
+  .logo{
+    margin-top: 0rem;
+    height: 80%;
+  }
+
+  .navbar a {
+    font-size: 1.5rem; 
+  }
+
+  .navigation-btn {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+    cursor: pointer;
+    padding: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .bar {
+    width: 50px;
+    height: 6px;
+    background: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(196, 47, 255);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .bar::before,
+  .bar::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(196,47,255);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .bar::before {
+    transform: translateY(-16px);
+  }
+
+  .bar::after {
+    transform: translateY(16px);
+  }
+
+  .burger-menu.open .bar {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .burger-menu.open .bar::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  .burger-menu.open .bar::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display: none;
+  }
+
+  .overlay.open {
+    display: block;
+  }
+
+  .overlay a {
+    display: block;
+    padding: 20px;
+    font-size: 1rem; /* Adjust the font size as needed */
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover {
+    background-color: #333;
+  }
 }
