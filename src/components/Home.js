@@ -5,7 +5,6 @@ import "./home.css";
 import Footer from "./Footer";
 import UpcomingEventsModal from "./UpcomingEventsModal";
 
-
 const Home = () => {
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -98,228 +97,228 @@ const Home = () => {
             </span>
           </button>
         </div>
+      </div>
 
-        <div className="about-us" ref={aboutUsRef}>
-          <div className="about-section vision-mission">
-            <h2>OBJECTIVES OF OUR CLUB</h2>
-            <ul className="objectives">
-              <li>
-                Foster Innovation: Voted the best club for encouraging creative
-                thinking and innovative projects within our community.
-              </li>
-              <li>
-                Enhance Coding Proficiency: Recognized as the top club providing
-                diverse opportunities for members to elevate their coding
-                abilities through workshops, competitions, and collaborative
-                projects.
-              </li>
+      <div className="about-us" ref={aboutUsRef}>
+        <div className="about-section vision-mission">
+          <h2>OBJECTIVES OF OUR CLUB</h2>
+          <ul className="objectives">
+            <li>
+              Foster Innovation: Voted the best club for encouraging creative
+              thinking and innovative projects within our community.
+            </li>
+            <li>
+              Enhance Coding Proficiency: Recognized as the top club providing
+              diverse opportunities for members to elevate their coding
+              abilities through workshops, competitions, and collaborative
+              projects.
+            </li>
 
-              <li>
-                Learning Hub: Best club facilitating access to educational
-                materials, guest lectures, and study groups, promoting
-                continuous learning.
-              </li>
+            <li>
+              Learning Hub: Best club facilitating access to educational
+              materials, guest lectures, and study groups, promoting continuous
+              learning.
+            </li>
 
-              <li>
-                {" "}
-                Startup Synergy: Acknowledged as the top club nurturing an
-                entrepreneurial spirit, offering guidance and collaboration
-                opportunities for those interested in startups.
-              </li>
-              <li>
-                {" "}
-                Community Connect: Best club creating an inclusive space for
-                members to connect, share ideas, and collaborate on projects
-                that go beyond coding.
-              </li>
-              <li>
-                Tech Insights: Recognized as the best club hosting coding
-                competitions and organizing workshops with industry experts,
-                exposing members to the latest trends and technologies.
-              </li>
-              <li>
-                {" "}
-                Soft Skills Development: Acknowledged as the best club
-                cultivating essential soft skills such as communication,
-                teamwork, leadership, and adaptability, enriching members both
-                professionally and personally.
-              </li>
-            </ul>
+            <li>
+              {" "}
+              Startup Synergy: Acknowledged as the top club nurturing an
+              entrepreneurial spirit, offering guidance and collaboration
+              opportunities for those interested in startups.
+            </li>
+            <li>
+              {" "}
+              Community Connect: Best club creating an inclusive space for
+              members to connect, share ideas, and collaborate on projects that
+              go beyond coding.
+            </li>
+            <li>
+              Tech Insights: Recognized as the best club hosting coding
+              competitions and organizing workshops with industry experts,
+              exposing members to the latest trends and technologies.
+            </li>
+            <li>
+              {" "}
+              Soft Skills Development: Acknowledged as the best club cultivating
+              essential soft skills such as communication, teamwork, leadership,
+              and adaptability, enriching members both professionally and
+              personally.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="about-section club-body">
+        <h2>THE TEAM</h2>
+        <div className="leadership-team">
+          <div className="cards">
+            <div className="card-content">
+              <img
+                src="aryan-chouksey-pfp.png"
+                alt="card-pfp"
+                className="card-pfp"
+              ></img>
+              <div className="social-media-icons">
+                <a
+                  href="https://www.instagram.com/i_am_a_ryan_86/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="ig-2-2.png" alt="Instagram" />
+                </a>
+                <a
+                  href="https://www.instagram.com/i_am_a_ryan_86/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="github-2-2.png" alt="GitHub" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/aryan-chouksey/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="li-2-2.png" alt="LinkedIn" />
+                </a>
+              </div>
+              <p className="name">Aryan Chouksey</p>
+              <p className="designation">students co-lead</p>
+            </div>
           </div>
-
-          <div className="about-section club-body">
-            <h2>THE TEAM</h2>
-            <div className="leadership-team">
-              <div className="cards">
-                <div className="card-content">
-                  <img
-                    src="aryan-chouksey-pfp.png"
-                    alt="card-pfp"
-                    className="card-pfp"
-                  ></img>
-                  <div className="social-media-icons">
-                    <a
-                      href="https://www.instagram.com/i_am_a_ryan_86/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="ig-2-2.png" alt="Instagram" />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/i_am_a_ryan_86/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="github-2-2.png" alt="GitHub" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/aryan-chouksey/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="li-2-2.png" alt="LinkedIn" />
-                    </a>
-                  </div>
-                  <p className="name">Aryan Chouksey</p>
-                  <p className="designation">students co-lead</p>
-                </div>
+          <div className="cards">
+            <div className="card-content">
+              <img
+                src="aryan-choudhary-pfp.png"
+                alt="card-pfp"
+                className="card-pfp"
+              ></img>
+              <div className="social-media-icons">
+                <a
+                  href="https://www.instagram.com/aryan.c193/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="ig-2-2.png" alt="Instagram" />
+                </a>
+                <a
+                  href="https://github.com/aryanc193"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="github-2-2.png" alt="GitHub" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/aryan-choudhary-arry193/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="li-2-2.png" alt="LinkedIn" />
+                </a>
               </div>
-              <div className="cards">
-                <div className="card-content">
-                  <img
-                    src="aryan-choudhary-pfp.png"
-                    alt="card-pfp"
-                    className="card-pfp"
-                  ></img>
-                  <div className="social-media-icons">
-                    <a
-                      href="https://www.instagram.com/aryan.c193/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="ig-2-2.png" alt="Instagram" />
-                    </a>
-                    <a
-                      href="https://github.com/aryanc193"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="github-2-2.png" alt="GitHub" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/aryan-choudhary-arry193/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="li-2-2.png" alt="LinkedIn" />
-                    </a>
-                  </div>
-                  <p className="name">Aryan Choudhary</p>
-                  <p className="designation">students co-lead</p>
-                </div>
+              <p className="name">Aryan Choudhary</p>
+              <p className="designation">students co-lead</p>
+            </div>
+          </div>
+          <div className="cards">
+            <div className="card-content">
+              <img
+                src="aniket-pfp.png"
+                alt="card-pfp"
+                className="card-pfp"
+              ></img>
+              <div className="social-media-icons">
+                <a
+                  href="https://www.instagram.com/aniket_dhakane/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="ig-2-2.png" alt="Instagram" />
+                </a>
+                <a
+                  href="https://github.com/watashiwaaniket"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="github-2-2.png" alt="GitHub" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/aniket-dhakane-9b06a125b/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="li-2-2.png" alt="LinkedIn" />
+                </a>
               </div>
-              <div className="cards">
-                <div className="card-content">
-                  <img
-                    src="aniket-pfp.png"
-                    alt="card-pfp"
-                    className="card-pfp"
-                  ></img>
-                  <div className="social-media-icons">
-                    <a
-                      href="https://www.instagram.com/aniket_dhakane/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="ig-2-2.png" alt="Instagram" />
-                    </a>
-                    <a
-                      href="https://github.com/watashiwaaniket"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="github-2-2.png" alt="GitHub" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/aniket-dhakane-9b06a125b/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="li-2-2.png" alt="LinkedIn" />
-                    </a>
-                  </div>
-                  <p className="name">Aniket Dhakane</p>
-                  <p className="designation">students co-lead</p>
-                </div>
+              <p className="name">Aniket Dhakane</p>
+              <p className="designation">students co-lead</p>
+            </div>
+          </div>
+          <div className="cards">
+            <div className="card-content">
+              <img
+                src="aditya-pfp.png"
+                alt="card-pfp"
+                className="card-pfp"
+              ></img>
+              <div className="social-media-icons">
+                <a
+                  href="https://www.instagram.com/the_quantum_legend/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="ig-2-2.png" alt="Instagram" />
+                </a>
+                <a
+                  href="https://github.com/Quantum-Legend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="github-2-2.png" alt="GitHub" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/aditya-mahale-adi2003/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="li-2-2.png" alt="LinkedIn" />
+                </a>
               </div>
-              <div className="cards">
-                <div className="card-content">
-                  <img
-                    src="aditya-pfp.png"
-                    alt="card-pfp"
-                    className="card-pfp"
-                  ></img>
-                  <div className="social-media-icons">
-                    <a
-                      href="https://www.instagram.com/the_quantum_legend/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="ig-2-2.png" alt="Instagram" />
-                    </a>
-                    <a
-                      href="https://github.com/Quantum-Legend"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="github-2-2.png" alt="GitHub" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/aditya-mahale-adi2003/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="li-2-2.png" alt="LinkedIn" />
-                    </a>
-                  </div>
-                  <p className="name">Aditya Mahale</p>
-                  <p className="designation">students co-lead</p>
-                </div>
+              <p className="name">Aditya Mahale</p>
+              <p className="designation">students co-lead</p>
+            </div>
+          </div>
+          <div className="cards">
+            <div className="card-content">
+              <img
+                src="joseph-pfp.png"
+                alt="card-pfp"
+                className="card-pfp"
+              ></img>
+              <div className="social-media-icons">
+                <a
+                  href="https://www.instagram.com/j0sh_seph/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="ig-2-2.png" alt="Instagram" />
+                </a>
+                <a
+                  href="https://github.com/J0seph-Mart1n"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="github-2-2.png" alt="GitHub" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/joseph-martin-656360228/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="li-2-2.png" alt="LinkedIn" />
+                </a>
               </div>
-              <div className="cards">
-                <div className="card-content">
-                  <img
-                    src="joseph-pfp.png"
-                    alt="card-pfp"
-                    className="card-pfp"
-                  ></img>
-                  <div className="social-media-icons">
-                    <a
-                      href="https://www.instagram.com/j0sh_seph/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="ig-2-2.png" alt="Instagram" />
-                    </a>
-                    <a
-                      href="https://github.com/J0seph-Mart1n"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="github-2-2.png" alt="GitHub" />
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/joseph-martin-656360228/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img src="li-2-2.png" alt="LinkedIn" />
-                    </a>
-                  </div>
-                  <p className="name">Joseph Martin</p>
-                  <p className="designation">students co-lead</p>
-                </div>
-              </div>
+              <p className="name">Joseph Martin</p>
+              <p className="designation">students co-lead</p>
             </div>
           </div>
         </div>

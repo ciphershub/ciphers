@@ -172,7 +172,7 @@ html {
 
 /* Card styling */
 .cards {
-  width: 30%;
+  width: 20%;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -229,6 +229,11 @@ html {
   border-radius: 20px;
   background-color: #000000c5;
   margin-bottom: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .social-media-icons img {
@@ -237,68 +242,76 @@ html {
   margin-right: 3%;
 }
 
-
 @media screen and (min-width: 150px) and (max-width: 1300px) {
-  .bgimg{
+  .bgimg {
     width: 100vw;
-    margin-top: 35%;
+    height: auto;
+    margin-top: 40%;
   }
 
-  .homepage-info{
-    margin-top: -52%;
+  .homepage-info {
+    margin-top: -60%;
+    height: 100vh;
   }
 
-  .go-to-aboutus{
+  .go-to-aboutus {
+    margin-top: 60%;
+    margin-bottom: auto;
+  }
+
+  .about-us {
     margin-top: 30%;
   }
 
-  .about-us{
-    margin-top: 30%;
-  }
-
-  .vision-mission{
+  .vision-mission {
     width: 95.5%;
     padding: 1%;
   }
 
-  .vision-mission h2{
-    font-size: 1.5rem;
+  .vision-mission h2 {
+    font-size: 1.25rem;
+    text-align: center;
   }
 
-  .vision-mission .objectives li{
-    font-size: 1.15rem;
+  .vision-mission .objectives li {
+    font-size: 1.05rem;
+    margin-left: -10%;
   }
 
-  .cards{
+  .cards {
     width: 50%;
   }
 
-  .card-pfp{
+  .card-pfp {
     margin-bottom: 20%;
-    box-shadow: 1px 1px 15px 1px #ffbb00, 1px 1px 15px 1px #ffbb00;;
+    box-shadow: 1px 1px 15px 1px #ffbb00, 1px 1px 15px 1px #ffbb00;
   }
 
-  .name{
+  .name {
     font-size: 0.9rem;
   }
-  .designation{
+  .designation {
     font-size: 0.85rem;
   }
 
-  .social-media-icons{
-    width: 115%;
+  .social-media-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
   }
 
-  .social-media-icons img{
+  .social-media-icons img {
     width: var(--icon-size2);
   }
 
-  #desc{
+  #desc {
     margin-top: 5%;
     font-size: large;
   }
 
-  .homepage-info h1{
+  .homepage-info h1 {
     font-weight: 300;
     font-size: 1.5rem;
   }

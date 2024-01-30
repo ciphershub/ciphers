@@ -262,10 +262,14 @@ body, html {
   .upcoming-events-modal{
     width: 50%;
     height: 100%;
-    margin-right: -60%;
-    margin-bottom: -50%;
+    right: -60%;
+    bottom: -25%;
     transform: rotate(-90deg);
     background:none;
+  }
+  
+  .upcoming-events-modal.closed{
+    transform: rotate(-90deg) translateY(30%);
   }
   
   .upcoming-events-modal p{
