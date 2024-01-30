@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        <div className="website-visit-counter">website views: 24</div>
+        <div className="website-visit-counter">website views: 53</div>
         <div className="contact-div">
           <ul className="sci">
             <li>
