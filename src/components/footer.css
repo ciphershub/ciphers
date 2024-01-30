@@ -128,3 +128,25 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media screen and (min-width: 150px) and (max-width: 1300px) {
+  .header-main-sm-dc, .header-main-sm-fb, .header-main-sm-gh, .header-main-sm-gmail, .header-main-sm-ig, .header-main-sm-link, .header-main-sm-tg{
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-main-sm-x{
+    width: 30px;
+    height: 30px;
+  }
+
+  .sci{
+    gap: 15%;
+    flex-wrap: wrap;
+    margin-top: auto;
+  }
+
+  .footer-container p{
+    font-size: 0.9rem;
+  }
+}

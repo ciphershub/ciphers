@@ -58,6 +58,7 @@ html {
   white-space: nowrap;
   font-size: 69px;
   margin: auto;
+  color: var(--secondary-color);
 }
 
 .go-to-aboutus {
@@ -234,4 +235,71 @@ html {
   width: var(--icon-size);
   margin-left: 3%;
   margin-right: 3%;
+}
+
+
+@media screen and (min-width: 150px) and (max-width: 1300px) {
+  .bgimg{
+    width: 100vw;
+    margin-top: 35%;
+  }
+
+  .homepage-info{
+    margin-top: -52%;
+  }
+
+  .go-to-aboutus{
+    margin-top: 30%;
+  }
+
+  .about-us{
+    margin-top: 30%;
+  }
+
+  .vision-mission{
+    width: 95.5%;
+    padding: 1%;
+  }
+
+  .vision-mission h2{
+    font-size: 1.5rem;
+  }
+
+  .vision-mission .objectives li{
+    font-size: 1.15rem;
+  }
+
+  .cards{
+    width: 50%;
+  }
+
+  .card-pfp{
+    margin-bottom: 20%;
+    box-shadow: 1px 1px 15px 1px #ffbb00, 1px 1px 15px 1px #ffbb00;;
+  }
+
+  .name{
+    font-size: 0.9rem;
+  }
+  .designation{
+    font-size: 0.85rem;
+  }
+
+  .social-media-icons{
+    width: 115%;
+  }
+
+  .social-media-icons img{
+    width: var(--icon-size2);
+  }
+
+  #desc{
+    margin-top: 5%;
+    font-size: large;
+  }
+
+  .homepage-info h1{
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
 }
