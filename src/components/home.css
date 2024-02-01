@@ -16,7 +16,8 @@ html {
 .bgimg {
   height: 100%;
   align-self: center;
-  filter: brightness(40%);
+  filter: brightness(60%);
+  margin-top: 3vh;
 }
 
 .homepage-div {
@@ -52,6 +53,13 @@ html {
   letter-spacing: 1px;
 }
 
+#desc span {
+  color: var(--secondary-color);
+  text-shadow: var(--primary-color) 2px 2px;
+  font-family: "Source Code Pro";
+  font-size: 2rem;
+}
+
 .cipher2 {
   font-family: "Source Code Pro", sans-serif;
   display: inline-block;
@@ -59,6 +67,7 @@ html {
   font-size: 69px;
   margin: auto;
   color: var(--secondary-color);
+  text-shadow: #ae00ff 2px 2px;
 }
 
 .go-to-aboutus {
@@ -87,7 +96,7 @@ html {
 }
 
 .down-arrow {
-  filter: invert(69);
+  filter: invert(100) grayscale(100);
 }
 
 .about-us {
@@ -103,7 +112,7 @@ html {
   padding: 2em;
   margin: auto;
   border-radius: 20px;
-  border: 5px solid #ffd009;
+  border: 3px solid #ffd009;
   margin-top: 1rem;
 }
 
@@ -114,7 +123,7 @@ html {
 }
 .vision-mission h2 {
   letter-spacing: 1px;
-  text-decoration: underline 4px var(--primary-color);
+  text-decoration: underline 2px #ae00ff;
   font-size: 1.75rem;
   color: #ffd009;
 }
@@ -127,9 +136,7 @@ html {
   margin-bottom: 5%;
 }
 
-.vision-mission .vm-heading {
-  margin-bottom: -2rem;
-  font-style: italic;
+.vision-mission h2 {
   text-align: center;
 }
 
@@ -162,11 +169,10 @@ html {
   text-decoration: underline overline 3px orange;
 }
 
-.leadership-team,
-.committee-cards {
+.leadership-team {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-evenly, left;
   flex-wrap: wrap;
 }
 
@@ -193,7 +199,7 @@ html {
 }
 
 .card-content:hover {
-  background-color: #cc00ff85;
+  background-color: rgba(187, 0, 255, 0.7);
 }
 
 .card-pfp {
@@ -242,7 +248,7 @@ html {
   margin-right: 3%;
 }
 
-@media screen and (min-width: 150px) and (max-width: 1300px) {
+@media screen and (min-width: 150px) and (max-width: 450px) {
   .bgimg {
     width: 100vw;
     height: auto;
@@ -304,6 +310,74 @@ html {
 
   .social-media-icons img {
     width: var(--icon-size2);
+  }
+
+  #desc {
+    margin-top: 5%;
+    font-size: large;
+  }
+
+  .homepage-info h1 {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1300px) {
+  .homepage-info {
+    margin-top: -45vh;
+  }
+  #desc {
+    font-size: 1rem;
+  }
+  .homepage-info h1 {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+  .cipher2 {
+    font-size: 4rem;
+  }
+
+  .bgimg {
+    width: 100vw;
+    height: auto;
+    margin-top: 10vh;
+  }
+
+  .vision-mission {
+    margin-top: 10vh;
+    width: 85vw;
+  }
+  .leadership-team {
+    justify-content: space-around;
+  }
+
+  .cards {
+    width: 30%;
+  }
+
+  .card-pfp {
+    margin-bottom: 20%;
+    box-shadow: 1px 1px 15px 1px #ffbb00, 1px 1px 15px 1px #ffbb00;
+  }
+
+  .name {
+    font-size: 0.9rem;
+  }
+  .designation {
+    font-size: 0.85rem;
+  }
+
+  .social-media-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .social-media-icons img {
+    width: 45px;
   }
 
   #desc {

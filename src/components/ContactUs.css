@@ -32,7 +32,7 @@ html {
   width: 100%;
 }
 
-.contactus-header{
+.contactus-header {
   width: 40vw;
 }
 .contactus-header img {
@@ -69,7 +69,7 @@ textarea {
 }
 
 .contactcardarea button {
-  background-color: transparent;
+  background-color: #b700ffb8;
   box-shadow: 1px 1px 10px 1px #00000054, 1px 1px 10px 1px #00000054;
   color: white;
   padding: 10px 15px;
@@ -107,7 +107,7 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
   width: 100%;
-  font-family: 'Source Code Pro';
+  font-family: "Source Code Pro";
 }
 
 /* Validation error styling */
@@ -126,9 +126,30 @@ textarea {
 }
 
 /* Responsive styling */
-@media (max-width: 600px) {
+@media screen and (min-width: 150px) and (max-width: 1300px) {
   input,
   textarea {
     width: 100%;
   }
+
+  .contactus-title {
+    margin-top: 10vh;
+  }
+
+  .contactus-body p {
+    font-size: 1rem;
+    padding: 5%;
+    margin-top: -5%;
+  }
+
+  form {
+    width: 90vw;
+  }
+
+  .contactcardarea button {
+    width: fit-content;
+    background-color: #b700ffb8;
+  }
 }
+
+

@@ -5,7 +5,232 @@ import "./home.css";
 import Footer from "./Footer";
 import UpcomingEventsModal from "./UpcomingEventsModal";
 
+const Card = ({ name, image, socialLinks, designation }) => {
+  return (
+    <div className="cards">
+      <div className="card-content">
+        <img src={image} alt={`card-pfp-${name}`} className="card-pfp" />
+        <div className="social-media-icons">
+          {socialLinks.map((link, index) => (
+            <a
+              key={index}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={link.icon} alt={link.name} />
+            </a>
+          ))}
+        </div>
+        <p className="name">{name}</p>
+        <p className="designation">{designation}</p>
+      </div>
+    </div>
+  );
+};
+
 const Home = () => {
+  const teamData = [
+    {
+      name: "Aryan Chouksey",
+      image: "aryan-chouksey-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/i_am_a_ryan_86/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://www.github.com/i_am_a_ryan_86/",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/aryan-chouksey/",
+        },
+      ],
+      designation: "students co-lead",
+    },
+    {
+      name: "Aryan Choudhary",
+      image: "aryan-choudhary-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/aryan.c193/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://www.github.com/aryanc193/",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/aryan-choudhary-arry193/",
+        },
+      ],
+      designation: "students co-lead",
+    },
+    {
+      name: "Aditya Mahale",
+      image: "aditya-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/the_quantum_legend/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://www.github.com/Quantum-Legend/",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/aditya-mahale-adi2003/",
+        },
+      ],
+      designation: "students co-lead",
+    },
+    {
+      name: "Joseph Martin",
+      image: "joseph-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/j0sh_seph/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://www.github.com/J0seph-Mart1n/",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/joseph-martin-656360228/",
+        },
+      ],
+      designation: "students co-lead",
+    },
+    {
+      name: "Aniket Dhakane",
+      image: "aniket-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/aniket_dhakane/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://www.github.com/watashiwaaniket/",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/aniket-dhakane-9b06a125b/",
+        },
+      ],
+      designation: "students co-lead",
+    },
+    {
+      name: "Gayatri Kulkarni",
+      image: "gayatri-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/gayatri_mk26/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://github.com/gayatrimk",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/gayatri-kulkarni-8705a8285/",
+        },
+      ],
+      designation: "Event Manager",
+    },
+    {
+      name: "Sharyu Adsul",
+      image: "sharyu-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/sharyu__19/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://github.com/Sharyuadsul",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/sharyu-adsul-7716a8232/",
+        },
+      ],
+      designation: "Events Co-ordinator",
+    },
+    {
+      name: "Shreya Bhavsar",
+      image: "shreya-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/_shreyaya___/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://github.com/shreya6286",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/shreya-bhavsar-4427b3147/",
+        },
+      ],
+      designation: "website manager",
+    },
+    {
+      name: "Ojasvin Borawake",
+      image: "ojasvin-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/ojas._.b/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://www.github.com/Pheonix747hs/",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/ojasvin-borawke-0686b2236/",
+        },
+      ],
+      designation: "website manager",
+    },
+  ];
+
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [currentWord, setCurrentWord] = useState("");
@@ -78,8 +303,8 @@ const Home = () => {
           <span>{currentWord}</span>
         </p>
         <p id="desc">
-          &#123; Club for Innovation, Programming, Higher Education Resources,
-          and Startups &#125;
+          &#123; <span>C</span>lub for <span>I</span>nnovation, <span>P</span>rogramming, <span>H</span>igher <span>E</span>ducation <span>R</span>esources,
+          and <span>S</span>tartups &#125;
         </p>
         <div className="go-to-aboutus">
           <button
@@ -151,176 +376,10 @@ const Home = () => {
       <div className="about-section club-body">
         <h2>THE TEAM</h2>
         <div className="leadership-team">
-          <div className="cards">
-            <div className="card-content">
-              <img
-                src="aryan-chouksey-pfp.png"
-                alt="card-pfp"
-                className="card-pfp"
-              ></img>
-              <div className="social-media-icons">
-                <a
-                  href="https://www.instagram.com/i_am_a_ryan_86/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="ig-2-2.png" alt="Instagram" />
-                </a>
-                <a
-                  href="https://www.instagram.com/i_am_a_ryan_86/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="github-2-2.png" alt="GitHub" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/aryan-chouksey/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="li-2-2.png" alt="LinkedIn" />
-                </a>
-              </div>
-              <p className="name">Aryan Chouksey</p>
-              <p className="designation">students co-lead</p>
-            </div>
-          </div>
-          <div className="cards">
-            <div className="card-content">
-              <img
-                src="aryan-choudhary-pfp.png"
-                alt="card-pfp"
-                className="card-pfp"
-              ></img>
-              <div className="social-media-icons">
-                <a
-                  href="https://www.instagram.com/aryan.c193/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="ig-2-2.png" alt="Instagram" />
-                </a>
-                <a
-                  href="https://github.com/aryanc193"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="github-2-2.png" alt="GitHub" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/aryan-choudhary-arry193/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="li-2-2.png" alt="LinkedIn" />
-                </a>
-              </div>
-              <p className="name">Aryan Choudhary</p>
-              <p className="designation">students co-lead</p>
-            </div>
-          </div>
-          <div className="cards">
-            <div className="card-content">
-              <img
-                src="aniket-pfp.png"
-                alt="card-pfp"
-                className="card-pfp"
-              ></img>
-              <div className="social-media-icons">
-                <a
-                  href="https://www.instagram.com/aniket_dhakane/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="ig-2-2.png" alt="Instagram" />
-                </a>
-                <a
-                  href="https://github.com/watashiwaaniket"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="github-2-2.png" alt="GitHub" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/aniket-dhakane-9b06a125b/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="li-2-2.png" alt="LinkedIn" />
-                </a>
-              </div>
-              <p className="name">Aniket Dhakane</p>
-              <p className="designation">students co-lead</p>
-            </div>
-          </div>
-          <div className="cards">
-            <div className="card-content">
-              <img
-                src="aditya-pfp.png"
-                alt="card-pfp"
-                className="card-pfp"
-              ></img>
-              <div className="social-media-icons">
-                <a
-                  href="https://www.instagram.com/the_quantum_legend/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="ig-2-2.png" alt="Instagram" />
-                </a>
-                <a
-                  href="https://github.com/Quantum-Legend"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="github-2-2.png" alt="GitHub" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/aditya-mahale-adi2003/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="li-2-2.png" alt="LinkedIn" />
-                </a>
-              </div>
-              <p className="name">Aditya Mahale</p>
-              <p className="designation">students co-lead</p>
-            </div>
-          </div>
-          <div className="cards">
-            <div className="card-content">
-              <img
-                src="joseph-pfp.png"
-                alt="card-pfp"
-                className="card-pfp"
-              ></img>
-              <div className="social-media-icons">
-                <a
-                  href="https://www.instagram.com/j0sh_seph/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="ig-2-2.png" alt="Instagram" />
-                </a>
-                <a
-                  href="https://github.com/J0seph-Mart1n"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="github-2-2.png" alt="GitHub" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/joseph-martin-656360228/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src="li-2-2.png" alt="LinkedIn" />
-                </a>
-              </div>
-              <p className="name">Joseph Martin</p>
-              <p className="designation">students co-lead</p>
-            </div>
-          </div>
+          {/* Reuse the Card component for each team member */}
+          {teamData.map((member, index) => (
+            <Card key={index} {...member} />
+          ))}
         </div>
       </div>
       <UpcomingEventsModal />

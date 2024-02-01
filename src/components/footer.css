@@ -1,4 +1,5 @@
 /* footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 :root {
   --icon-size: 60px;
 }
@@ -23,14 +24,16 @@
 
 .website-visit-counter {
   width: fit-content;
-  padding: 1%;
-  font-family: 'Roboto', Arial;
+  padding: 2%;
+  font-family: 'Orbitron', Arial;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 1.25rem;
-  color: #000;
-  text-shadow: 2px 2px 15px #000000;
-  font-weight: 600;
+  color: #00ff37;
+  background-color: #00000069;
+  border-radius: 10px;
+  font-weight: 800;
+  border:3px solid #00ff37;
 }
 
 .contact-div {
@@ -138,15 +141,22 @@
   .header-main-sm-x{
     width: 30px;
     height: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
 
   .sci{
     gap: 15%;
+    display: flex;
     flex-wrap: wrap;
     margin-top: auto;
+    align-items: left;
+    justify-content: left;
   }
 
   .footer-container p{
     font-size: 0.9rem;
+    margin-bottom: 20%;
   }
+
 }

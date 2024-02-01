@@ -47,6 +47,11 @@ const Resources = () => {
       image: "data-science.png",
       link: "https://www.kaggle.com/learn/data-science",
     },
+    {
+      name: "Academic Practicals",
+      image: "practicals.png",
+      link: "https://github.com/Ciphers-hub/Academic-Codes/",
+    },
     // Add more resources as needed
   ];
 
