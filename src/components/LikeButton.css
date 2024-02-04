@@ -16,8 +16,11 @@
   border-radius: 5px;
   margin-top: 10px;
   display: flex;
-  align-items: center; /* Align the icon and text vertically */
-  transition: background-color 0.3s ease;
+  align-items: center;
+  animation: pulse 1s infinite; /* Start pulsing animation by default */
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease; /* Add transform transition */
 }
 
 @keyframes pulse {
@@ -38,6 +41,8 @@
 
 .like-button:hover {
   background-color: #ff4757;
+  transform: scale(1); /* Stop pulsing animation on hover */
+  animation: none; /* Stop the animation on hover */
 }
 
 .thumbs-up-icon {
