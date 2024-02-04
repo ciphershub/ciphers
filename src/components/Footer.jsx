@@ -1,15 +1,14 @@
 // src/Footer.js
-import React from 'react';
-
-import './footer.css';
+import React from "react";
+import LikeButton from "./LikeButton";
+import "./footer.css";
 
 const Footer = () => {
-  
-
   return (
     <footer className="footer-container">
       <div className="footer-content">
         <div className="website-visit-counter">website views: 89</div>
+        <LikeButton />
         <div className="contact-div">
           <ul className="sci">
             <li>

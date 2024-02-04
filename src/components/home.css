@@ -254,6 +254,9 @@ html {
   margin-left: 3%;
   margin-right: 3%;
 }
+.social-media-icons img:hover {
+  transform: scale(1.1);
+}
 
 @media screen and (min-width: 150px) and (max-width: 450px) {
   .bgimg {
@@ -261,7 +264,7 @@ html {
     height: auto;
     margin-top: 40%;
   }
-  .cipher2{
+  .cipher2 {
     font-size: 5rem;
   }
   .homepage-info {
