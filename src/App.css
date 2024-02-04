@@ -37,7 +37,7 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: var(--bg-color);
+  background-color: #000000;
   align-items: center;
   padding: 10px;
   color: #ffffff;
@@ -68,11 +68,9 @@ html {
   margin-left: -4em;
   background: none;
   border: none;
-}
-
-.logo {
   margin-top: -1.2em;
 }
+
 .logo-img {
   height: 130%;
   filter: brightness(300%);
