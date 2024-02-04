@@ -12,7 +12,10 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar" style={{ position: "fixed", top: 0, width: "100%", zIndex: 100}}>
+      <div
+        className="navbar"
+        style={{ position: "fixed", top: 0, width: "100%", zIndex: 100 }}
+      >
         <div className="logo">
           <img
             src="cipher-logo-removebg.png"
@@ -30,16 +33,29 @@ const Navbar = () => {
             <nobr>Contact Us</nobr>
           </Link>
         </div>
-        <div className={`burger-menu${menuOpen ? " open" : ""}`} onClick={toggleMenu}>
+        <div
+          className={`burger-menu${menuOpen ? " open" : ""}`}
+          onClick={toggleMenu}
+        >
           <div className="bar"></div>
         </div>
       </div>
       <div className={`overlay${menuOpen ? " open" : ""}`}>
-        <Link to="/" onClick={toggleMenu}>Home</Link>
-        <Link to="/events" onClick={toggleMenu}>Events</Link>
-        <Link to="/competitions" onClick={toggleMenu}>Competitions</Link>
-        <Link to="/resources" onClick={toggleMenu}>Resources</Link>
-        <Link to="/startups" onClick={toggleMenu}>Startups</Link>
+        <Link to="/" onClick={toggleMenu}>
+          Home
+        </Link>
+        <Link to="/events" onClick={toggleMenu}>
+          Events
+        </Link>
+        <Link to="/competitions" onClick={toggleMenu}>
+          Competitions
+        </Link>
+        <Link to="/resources" onClick={toggleMenu}>
+          Resources
+        </Link>
+        <Link to="/startups" onClick={toggleMenu}>
+          Startups
+        </Link>
         <Link to="/contactus" onClick={toggleMenu}>
           <nobr>Contact Us</nobr>
         </Link>
