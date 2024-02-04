@@ -79,11 +79,11 @@ const Events = () => {
 
         {/* Previous events section */}
         <div ref={previousEventRef} className="previous-events-section">
-          <h2 class="prev-event-title">Previous Events</h2>
-          <div class="prevEvent">
+          <h2 className="prev-event-title">Previous Events</h2>
+          <div className="prevEvent">
             <img
               src="prev-event.png"
-              class="event-img"
+              className="event-img"
               alt="previouseventimages"
             />
           </div>

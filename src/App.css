@@ -112,7 +112,7 @@ html {
 }
 
 .upcoming-events-modal.closed {
-  transform: translateY(100%);
+  transform: translateY(96%);
   background: none;
 }
 
@@ -138,10 +138,9 @@ html {
   margin-bottom: -3%;
 }
 
-.close-button img{
+.close-button img {
   background: #ffffff;
   border-radius: 50%;
-
 }
 
 .closed .close-button img {

@@ -270,7 +270,7 @@ const Home = () => {
               setCharIndex(0);
               // Update the sentenceIndex in a way that ensures it's within the valid range
               setSentenceIndex(
-                (prevIndex) => (prevIndex + 1) % sentences.length
+                (prevIndex) => (prevIndex + 1) % sentences.length,
               );
               startHackingAnimation();
             }, 100); // Adjust the pause before typing the next word
@@ -303,8 +303,9 @@ const Home = () => {
           <span>{currentWord}</span>
         </p>
         <p id="desc">
-          &#123; <span>C</span>lub for <span>I</span>nnovation, <span>P</span>rogramming, <span>H</span>igher <span>E</span>ducation <span>R</span>esources,
-          and <span>S</span>tartups &#125;
+          &#123; <span>C</span>lub for <span>I</span>nnovation, <span>P</span>
+          rogramming, <span>H</span>igher <span>E</span>ducation <span>R</span>
+          esources, and <span>S</span>tartups &#125;
         </p>
         <div className="go-to-aboutus">
           <button

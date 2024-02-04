@@ -70,7 +70,7 @@
 .header-main-sm-ig {
   width: var(--icon-size);
   height: var(--icon-size);
-  background-image: url(../../public/ig-2-2.png);
+  background-image: url(/ig-2-2.png);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
@@ -79,7 +79,7 @@
 .header-main-sm-gh {
   width: var(--icon-size);
   height: var(--icon-size);
-  background-image: url(../../public/github-2-2.png);
+  background-image: url(/github-2-2.png);
   background-repeat: no-repeat;
   border-radius: 50%;
   background-size: cover;
@@ -96,7 +96,7 @@
 .header-main-sm-link {
   width: var(--icon-size);
   height: var(--icon-size);
-  background-image: url(../../public/li-2-2.png);
+  background-image: url(/li-2-2.png);
   background-repeat: no-repeat;
   border-radius: 50%;
   background-size: cover;
@@ -105,7 +105,7 @@
 .header-main-sm-dc {
   width: var(--icon-size);
   height: var(--icon-size);
-  background-image: url(../../public/discord-2.png);
+  background-image: url(/discord-2.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -113,21 +113,21 @@
 .header-main-sm-gmail {
   width: var(--icon-size);
   height: var(--icon-size);
-  background-image: url(../../public/gmail-2-2.png);
+  background-image: url(/gmail-2-2.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .header-main-sm-fb {
   width: var(--icon-size);
   height: var(--icon-size);
-  background-image: url(../../public/fblogo.png);
+  background-image: url(/fblogo.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .header-main-sm-x {
   width: 50px;
   height: 50px;
-  background-image: url(../../public/xlogo.png);
+  background-image: url(/xlogo.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
