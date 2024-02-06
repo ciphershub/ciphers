@@ -6,7 +6,13 @@ import Footer from "./Footer";
 const Events = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = 2; // Set the total number of slides
-  const slideDuration = 5000; // Set the duration for each slide in milliseconds
+  const slideDuration = 7000; // Set the duration for each slide in milliseconds
+
+  // Maintain an array of registration links corresponding to each event
+  const registrationLinks = [
+    "https://docs.google.com/forms/d/e/1FAIpQLSe5KuLpPgj7PX2mVPq3HbDUIl5j1JbLe53Sf9hbPRglP-M6HQ/viewform?usp=sf_link",
+    "https://docs.google.com/",
+  ];
 
   const previousEventRef = useRef(null); // Create a ref for the previous events section
 
@@ -25,11 +31,6 @@ const Events = () => {
     setCurrentSlide(index);
   };
 
-  const handleRegisterClick = () => {
-    // Open the Google Form in a new tab
-    window.open("https://docs.google.com/forms/d/e/1FAIpQLSe5KuLpPgj7PX2mVPq3HbDUIl5j1JbLe53Sf9hbPRglP-M6HQ/viewform?usp=sf_link", "_blank");
-  };
-
   const handlePreviousEventsClick = () => {
     // Handle button click to navigate to the previous events section
     if (previousEventRef.current) {
@@ -42,10 +43,7 @@ const Events = () => {
       <div className="events-container">
         <div className="slider">
           {/* Display the current slide */}
-          <img
-            src={`event${currentSlide + 1}.png`}
-            alt={`Event ${currentSlide + 1}`}
-          />
+          <img src={`event${currentSlide + 1}.png`} alt={`Event ${currentSlide + 1}`} />
           <div className="gradient-overlay"></div>
           {/* Thumbnails at the bottom */}
           <div className="thumbnails">
@@ -62,7 +60,7 @@ const Events = () => {
 
           {/* Buttons below the slider */}
           <div className="buttons">
-            <button className="register-btn" onClick={handleRegisterClick}>
+            <button className="register-btn" onClick={() => window.open(registrationLinks[currentSlide], "_blank")}>
               Register Now
             </button>
             <button
