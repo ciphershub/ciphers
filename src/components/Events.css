@@ -131,7 +131,7 @@
 @media screen and (min-width: 150px) and (max-width: 450px) {
   .slider img {
     width: 100vw;
-    height: 56.25vw;
+    height: fit-content;
     border-radius: 20px;
   }
 
