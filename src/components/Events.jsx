@@ -27,7 +27,7 @@ const Events = () => {
 
   const handleRegisterClick = () => {
     // Open the Google Form in a new tab
-    window.open("https://your-google-form-url", "_blank");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSe5KuLpPgj7PX2mV", "_blank");
   };
 
   const handlePreviousEventsClick = () => {
