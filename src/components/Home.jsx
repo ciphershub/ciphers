@@ -4,6 +4,7 @@ import "../App.css";
 import "./home.css";
 import Footer from "./Footer";
 import UpcomingEventsModal from "./UpcomingEventsModal";
+import AccordionItem from "./AccordionItem";
 
 const Card = ({ name, image, socialLinks, designation }) => {
   return (
@@ -230,6 +231,43 @@ const Home = () => {
       designation: "website manager",
     },
   ];
+  const objectives = [
+    {
+      title: "Foster Innovation",
+      description:
+        "Voted the best club for encouraging creative thinking and innovative projects within our community.",
+    },
+    {
+      title: "Enhance Coding Proficiency",
+      description:
+        "Recognized as the top club providing diverse opportunities for members to elevate their coding abilities through workshops, competitions, and collaborative projects.",
+    },
+    {
+      title: "Learning Hub",
+      description:
+        "Best club facilitating access to educational materials, guest lectures, and study groups, promoting continuous learning.",
+    },
+    {
+      title: "Startup Synergy",
+      description:
+        "Acknowledged as the top club nurturing an entrepreneurial spirit, offering guidance and collaboration opportunities for those interested in startups.",
+    },
+    {
+      title: "Community Connect",
+      description:
+        "Best club creating an inclusive space for members to connect, share ideas, and collaborate on projects that go beyond coding.",
+    },
+    {
+      title: "Tech Insights",
+      description:
+        "Recognized as the best club hosting coding competitions and organizing workshops with industry experts, exposing members to the latest trends and technologies.",
+    },
+    {
+      title: "Soft Skills Development",
+      description:
+        "Acknowledged as the best club cultivating essential soft skills such as communication, teamwork, leadership, and adaptability, enriching members both professionally and personally.",
+    },
+  ];
 
   const [sentenceIndex, setSentenceIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -270,7 +308,7 @@ const Home = () => {
               setCharIndex(0);
               // Update the sentenceIndex in a way that ensures it's within the valid range
               setSentenceIndex(
-                (prevIndex) => (prevIndex + 1) % sentences.length,
+                (prevIndex) => (prevIndex + 1) % sentences.length
               );
               startHackingAnimation();
             }, 100); // Adjust the pause before typing the next word
@@ -328,49 +366,15 @@ const Home = () => {
       <div className="about-us" ref={aboutUsRef}>
         <div className="about-section vision-mission">
           <h2>OBJECTIVES OF OUR CLUB</h2>
-          <ul className="objectives">
-            <li>
-              Foster Innovation: Voted the best club for encouraging creative
-              thinking and innovative projects within our community.
-            </li>
-            <li>
-              Enhance Coding Proficiency: Recognized as the top club providing
-              diverse opportunities for members to elevate their coding
-              abilities through workshops, competitions, and collaborative
-              projects.
-            </li>
-
-            <li>
-              Learning Hub: Best club facilitating access to educational
-              materials, guest lectures, and study groups, promoting continuous
-              learning.
-            </li>
-
-            <li>
-              {" "}
-              Startup Synergy: Acknowledged as the top club nurturing an
-              entrepreneurial spirit, offering guidance and collaboration
-              opportunities for those interested in startups.
-            </li>
-            <li>
-              {" "}
-              Community Connect: Best club creating an inclusive space for
-              members to connect, share ideas, and collaborate on projects that
-              go beyond coding.
-            </li>
-            <li>
-              Tech Insights: Recognized as the best club hosting coding
-              competitions and organizing workshops with industry experts,
-              exposing members to the latest trends and technologies.
-            </li>
-            <li>
-              {" "}
-              Soft Skills Development: Acknowledged as the best club cultivating
-              essential soft skills such as communication, teamwork, leadership,
-              and adaptability, enriching members both professionally and
-              personally.
-            </li>
-          </ul>
+            {/* Map through objectives and render AccordionItem for each */}
+            <div className="accordion-points">
+            {objectives.map((objective, index) => (
+              <AccordionItem
+                key={index}
+                title={objective.title}
+                description={objective.description}
+              />
+            ))}</div>
         </div>
       </div>
 
