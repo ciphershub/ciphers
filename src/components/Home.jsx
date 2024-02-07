@@ -52,7 +52,7 @@ const Home = () => {
           url: "https://www.linkedin.com/in/aryan-chouksey/",
         },
       ],
-      designation: "students co-lead",
+      designation: "President",
     },
     {
       name: "Aryan Choudhary",
@@ -74,7 +74,7 @@ const Home = () => {
           url: "https://www.linkedin.com/in/aryan-choudhary-arry193/",
         },
       ],
-      designation: "students co-lead",
+      designation: "Vice President",
     },
     {
       name: "Aditya Mahale",
@@ -96,7 +96,7 @@ const Home = () => {
           url: "https://www.linkedin.com/in/aditya-mahale-adi2003/",
         },
       ],
-      designation: "students co-lead",
+      designation: "Secretary",
     },
     {
       name: "Joseph Martin",
@@ -118,7 +118,7 @@ const Home = () => {
           url: "https://www.linkedin.com/in/joseph-martin-656360228/",
         },
       ],
-      designation: "students co-lead",
+      designation: "Founding team and Programming Team Co-head",
     },
     {
       name: "Aniket Dhakane",
@@ -140,7 +140,7 @@ const Home = () => {
           url: "https://www.linkedin.com/in/aniket-dhakane-9b06a125b/",
         },
       ],
-      designation: "students co-lead",
+      designation: "Management & Social Media co-lead",
     },
     {
       name: "Gayatri Kulkarni",
@@ -162,7 +162,7 @@ const Home = () => {
           url: "https://www.linkedin.com/in/gayatri-kulkarni-8705a8285/",
         },
       ],
-      designation: "Event Manager",
+      designation: "Events and Social Media Manager",
     },
     {
       name: "Sharyu Adsul",
@@ -184,7 +184,7 @@ const Home = () => {
           url: "https://www.linkedin.com/in/sharyu-adsul-7716a8232/",
         },
       ],
-      designation: "Events Co-ordinator",
+      designation: "Events and Social Media Manager",
     },
     {
       name: "Shreya Bhavsar",
@@ -206,7 +206,7 @@ const Home = () => {
           url: "https://www.linkedin.com/in/shreya-bhavsar-4427b3147/",
         },
       ],
-      designation: "website manager",
+      designation: "Management Team",
     },
     {
       name: "Ojasvin Borawake",
@@ -228,7 +228,7 @@ const Home = () => {
           url: "https://www.linkedin.com/in/ojasvin-borawke-0686b2236/",
         },
       ],
-      designation: "website manager",
+      designation: "management team co-lead",
     },
   ];
   const objectives = [

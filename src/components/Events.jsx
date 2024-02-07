@@ -11,7 +11,7 @@ const Events = () => {
   // Maintain an array of registration links corresponding to each event
   const registrationLinks = [
     "https://forms.gle/BaDKCVTydCTarHK77",
-    "https://ciphers-portfolio.onrender.com"
+    "#"
   ];
 
   const previousEventRef = useRef(null); // Create a ref for the previous events section
