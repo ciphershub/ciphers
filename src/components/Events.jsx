@@ -10,8 +10,8 @@ const Events = () => {
 
   // Maintain an array of registration links corresponding to each event
   const registrationLinks = [
-    "https://docs.google.com/forms/d/e/1FAIpQLSe5KuLpPgj7PX2mVPq3HbDUIl5j1JbLe53Sf9hbPRglP-M6HQ/viewform?usp=sf_link",
-    "https://docs.google.com/",
+    "https://forms.gle/BaDKCVTydCTarHK77",
+    "https://ciphers-portfolio.onrender.com"
   ];
 
   const previousEventRef = useRef(null); // Create a ref for the previous events section
@@ -43,7 +43,10 @@ const Events = () => {
       <div className="events-container">
         <div className="slider">
           {/* Display the current slide */}
-          <img src={`event${currentSlide + 1}.png`} alt={`Event ${currentSlide + 1}`} />
+          <img
+            src={`event${currentSlide + 1}.png`}
+            alt={`Event ${currentSlide + 1}`}
+          />
           <div className="gradient-overlay"></div>
           {/* Thumbnails at the bottom */}
           <div className="thumbnails">
@@ -60,7 +63,12 @@ const Events = () => {
 
           {/* Buttons below the slider */}
           <div className="buttons">
-            <button className="register-btn" onClick={() => window.open(registrationLinks[currentSlide], "_blank")}>
+            <button
+              className="register-btn"
+              onClick={() =>
+                window.open(registrationLinks[currentSlide], "_blank")
+              }
+            >
               Register Now
             </button>
             <button
@@ -80,7 +88,7 @@ const Events = () => {
           <h2 className="prev-event-title">Previous Events</h2>
           <div className="prevEvent">
             <img
-              src="prev-event.png"
+              src="higher-edu.png"
               className="event-img"
               alt="previouseventimages"
             />

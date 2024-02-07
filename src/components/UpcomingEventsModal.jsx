@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../App.css'; // Import the CSS file for styling
+import EventSlider from './EventSlider';
 
 const UpcomingEventsModal = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -31,8 +32,8 @@ const UpcomingEventsModal = () => {
       <div className="modal-content">
         <p>Upcoming Events</p>
         {/* Use Link to make the image a clickable link */}
-        <Link to="/events" onClick={toggleModal}>
-          <img src='event.png' alt='events-mini' />
+        <Link to="/events">
+          <EventSlider totalSlides={2} />
         </Link>
       </div>
     </div>

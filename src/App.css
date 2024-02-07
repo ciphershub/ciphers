@@ -97,7 +97,7 @@ html {
   position: fixed;
   bottom: 3.5%;
   right: 1.5%;
-  width: 10%;
+  width: 20%;
   /* background: linear-gradient(0deg, #b700ff 0%, #ffffff00 100%); */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -108,6 +108,14 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  height: 33%;
+}
+
+.slider2 img{
+ width: 100%;
+ border-radius: 2%;
+ border-bottom: 3px solid var(--primary-color);
+ border-top: 3px solid var(--primary-color);
 }
 
 .upcoming-events-modal.closed {
@@ -118,13 +126,6 @@ html {
 .modal-content {
   padding: 2%;
   color: #fff;
-}
-
-.modal-content img {
-  width: 100%;
-  border-radius: 2%;
-  border-bottom: 3px solid var(--primary-color);
-  border-top: 3px solid var(--primary-color);
 }
 
 .close-button {
