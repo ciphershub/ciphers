@@ -268,25 +268,31 @@ html {
   }
 
   .upcoming-events-modal {
-    width: 50%;
+    width: 60%;
     height: 100%;
     right: -60%;
     bottom: -25%;
     transform: rotate(-90deg);
     background: none;
   }
-
+  
   .upcoming-events-modal.closed {
     transform: rotate(-90deg) translateY(27%);
+    background: transparent;
   }
+
+  .closed .close-button{
+  background: transparent;}
 
   .upcoming-events-modal p {
     display: none;
   }
-
-  .modal-content img {
-    transform: rotate(90deg);
-  }
+.slider2 img{
+  width: 100%;
+  rotate: 90deg;
+  margin-top: 20%;
+}
+  
 }
 
 @media screen and (min-width: 450px) and (max-width: 1300px) {

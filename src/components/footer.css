@@ -125,16 +125,19 @@
   }
 
   .sci {
+    width: 80vw;
     gap: 15%;
+    margin-bottom: 20%;
     display: flex;
     flex-wrap: wrap;
     margin-top: auto;
     align-items: left;
     justify-content: left;
+
   }
 
-  .footer-container p {
+  .footer-container p { 
     font-size: 0.9rem;
-    margin-bottom: 20%;
+    margin-bottom: 30%;
   }
 }

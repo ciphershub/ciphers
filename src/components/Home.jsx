@@ -99,26 +99,26 @@ const Home = () => {
       designation: "Secretary",
     },
     {
-      name: "Joseph Martin",
-      image: "joseph-pfp.png",
+      name: "Gayatri Kulkarni",
+      image: "gayatri-pfp.png",
       socialLinks: [
         {
           name: "Instagram",
           icon: "ig-2-2.png",
-          url: "https://www.instagram.com/j0sh_seph/",
+          url: "https://www.instagram.com/gayatri_mk26/",
         },
         {
           name: "GitHub",
           icon: "github-2-2.png",
-          url: "https://www.github.com/J0seph-Mart1n/",
+          url: "https://github.com/gayatrimk",
         },
         {
           name: "LinkedIn",
           icon: "li-2-2.png",
-          url: "https://www.linkedin.com/in/joseph-martin-656360228/",
+          url: "https://www.linkedin.com/in/gayatri-kulkarni-8705a8285/",
         },
       ],
-      designation: "Founding team and Programming Team Co-head",
+      designation: "Events and Social Media Manager",
     },
     {
       name: "Aniket Dhakane",
@@ -143,48 +143,26 @@ const Home = () => {
       designation: "Management & Social Media co-lead",
     },
     {
-      name: "Gayatri Kulkarni",
-      image: "gayatri-pfp.png",
+      name: "Ojasvin Borawake",
+      image: "ojasvin-pfp.png",
       socialLinks: [
         {
           name: "Instagram",
           icon: "ig-2-2.png",
-          url: "https://www.instagram.com/gayatri_mk26/",
+          url: "https://www.instagram.com/ojas._.b/",
         },
         {
           name: "GitHub",
           icon: "github-2-2.png",
-          url: "https://github.com/gayatrimk",
+          url: "https://www.github.com/Pheonix747hs/",
         },
         {
           name: "LinkedIn",
           icon: "li-2-2.png",
-          url: "https://www.linkedin.com/in/gayatri-kulkarni-8705a8285/",
+          url: "https://www.linkedin.com/in/ojasvin-borawke-0686b2236/",
         },
       ],
-      designation: "Events and Social Media Manager",
-    },
-    {
-      name: "Sharyu Adsul",
-      image: "sharyu-pfp.png",
-      socialLinks: [
-        {
-          name: "Instagram",
-          icon: "ig-2-2.png",
-          url: "https://www.instagram.com/sharyu__19/",
-        },
-        {
-          name: "GitHub",
-          icon: "github-2-2.png",
-          url: "https://github.com/Sharyuadsul",
-        },
-        {
-          name: "LinkedIn",
-          icon: "li-2-2.png",
-          url: "https://www.linkedin.com/in/sharyu-adsul-7716a8232/",
-        },
-      ],
-      designation: "Events and Social Media Manager",
+      designation: "management team co-lead",
     },
     {
       name: "Shreya Bhavsar",
@@ -208,27 +186,160 @@ const Home = () => {
       ],
       designation: "Management Team",
     },
+
     {
-      name: "Ojasvin Borawake",
-      image: "ojasvin-pfp.png",
+      name: "Sharyu Adsul",
+      image: "sharyu-pfp.png",
       socialLinks: [
         {
           name: "Instagram",
           icon: "ig-2-2.png",
-          url: "https://www.instagram.com/ojas._.b/",
+          url: "https://www.instagram.com/sharyu__19/",
         },
         {
           name: "GitHub",
           icon: "github-2-2.png",
-          url: "https://www.github.com/Pheonix747hs/",
+          url: "https://github.com/Sharyuadsul",
         },
         {
           name: "LinkedIn",
           icon: "li-2-2.png",
-          url: "https://www.linkedin.com/in/ojasvin-borawke-0686b2236/",
+          url: "https://www.linkedin.com/in/sharyu-adsul-7716a8232/",
         },
       ],
-      designation: "management team co-lead",
+      designation: "Higher Education Head and Social Media Manager",
+    },
+    {
+      name: "Aparimeya Tiwari",
+      image: "aparimeya-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://www.github.com/",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/aparimeya-tiwari-76a252252/",
+        },
+      ],
+      designation: "Higher Education Co-Head",
+    },
+    {
+      name: "Joseph Martin",
+      image: "joseph-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/j0sh_seph/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://www.github.com/J0seph-Mart1n/",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/joseph-martin-656360228/",
+        },
+      ],
+      designation: "Founding team and Programming Team Co-head",
+    },
+    {
+      name: "Sanchit Patil",
+      image: "sanchit-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/#",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://www.github.com/#",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/sanchit-patil-888162288/",
+        },
+      ],
+      designation: "Programming Head",
+    },
+    {
+      name: "Pranjal J Patil",
+      image: "students-card.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/#",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://www.github.com/#",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/pranjal-patil-322661244/",
+        },
+      ],
+      designation: "Startups Head",
+    },
+    {
+      name: "Arya Kasbe",
+      image: "arya-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/#",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://github.com/adwait-rao",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/aarya-kasbe-87bab3227/",
+        },
+      ],
+      designation: "Innovation Head",
+    },
+    {
+      name: "Adwait Rao",
+      image: "adwait-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/#",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://www.github.com/#",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/adwait-rao-973a57222/",
+        },
+      ],
+      designation: "Innovation Co-Head",
     },
   ];
   const objectives = [
@@ -366,15 +477,16 @@ const Home = () => {
       <div className="about-us" ref={aboutUsRef}>
         <div className="about-section vision-mission">
           <h2>OBJECTIVES OF OUR CLUB</h2>
-            {/* Map through objectives and render AccordionItem for each */}
-            <div className="accordion-points">
+          {/* Map through objectives and render AccordionItem for each */}
+          <div className="accordion-points">
             {objectives.map((objective, index) => (
               <AccordionItem
                 key={index}
                 title={objective.title}
                 description={objective.description}
               />
-            ))}</div>
+            ))}
+          </div>
         </div>
       </div>
 
