@@ -239,7 +239,9 @@ html {
 
 .card-content:hover .card-pfp {
   transform: rotateY(360deg); /* Adjust the rotation angle as needed */
-  transition: transform 1s ease; /* Add a transition for smooth animation */
+  transition: transform 1s ease, box-shadow 1s ease, border 1s ease; /* Add a transition for smooth animation */
+  box-shadow: 2px 2px 35px 2px #a200ff, 2px 2px 35px 2px #a200ff;
+  border: 2px solid #a200ff;
 }
 
 
@@ -248,10 +250,10 @@ html {
   height: auto; /* Allow the height to adjust proportionally */
   object-fit: cover;
   aspect-ratio: 1/1;
+  box-shadow: 2px 2px 25px 2px #ffbb00, 2px 2px 25px 2px #ffbb00;
   border: 2px solid #ffbb00;
   border-radius: 50%;
   margin-bottom: 1rem;
-  box-shadow: 2px 2px 25px 2px #ffbb00, 2px 2px 25px 2px #ffbb00;
 }
 
 .name {
