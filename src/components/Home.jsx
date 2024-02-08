@@ -118,7 +118,29 @@ const Home = () => {
           url: "https://www.linkedin.com/in/gayatri-kulkarni-8705a8285/",
         },
       ],
-      designation: "Events and Social Media Manager",
+      designation: "Social Media Head",
+    },
+    {
+      name: "Om Garg",
+      image: "students-card.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "#",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "#",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "#",
+        },
+      ],
+      designation: "Social Media co-Head",
     },
     {
       name: "Aniket Dhakane",
@@ -140,7 +162,7 @@ const Home = () => {
           url: "https://www.linkedin.com/in/aniket-dhakane-9b06a125b/",
         },
       ],
-      designation: "Management & Social Media co-lead",
+      designation: "Management Team",
     },
     {
       name: "Ojasvin Borawake",
@@ -162,7 +184,7 @@ const Home = () => {
           url: "https://www.linkedin.com/in/ojasvin-borawke-0686b2236/",
         },
       ],
-      designation: "management team co-lead",
+      designation: "management team",
     },
     {
       name: "Shreya Bhavsar",
@@ -207,7 +229,7 @@ const Home = () => {
           url: "https://www.linkedin.com/in/sharyu-adsul-7716a8232/",
         },
       ],
-      designation: "Higher Education Head and Social Media Manager",
+      designation: "Higher Education Head",
     },
     {
       name: "Aparimeya Tiwari",
@@ -232,28 +254,6 @@ const Home = () => {
       designation: "Higher Education Co-Head",
     },
     {
-      name: "Joseph Martin",
-      image: "joseph-pfp.png",
-      socialLinks: [
-        {
-          name: "Instagram",
-          icon: "ig-2-2.png",
-          url: "https://www.instagram.com/j0sh_seph/",
-        },
-        {
-          name: "GitHub",
-          icon: "github-2-2.png",
-          url: "https://www.github.com/J0seph-Mart1n/",
-        },
-        {
-          name: "LinkedIn",
-          icon: "li-2-2.png",
-          url: "https://www.linkedin.com/in/joseph-martin-656360228/",
-        },
-      ],
-      designation: "Founding team and Programming Team Co-head",
-    },
-    {
       name: "Sanchit Patil",
       image: "sanchit-pfp.png",
       socialLinks: [
@@ -274,6 +274,28 @@ const Home = () => {
         },
       ],
       designation: "Programming Head",
+    },
+    {
+      name: "Joseph Martin",
+      image: "joseph-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/j0sh_seph/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://www.github.com/J0seph-Mart1n/",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/joseph-martin-656360228/",
+        },
+      ],
+      designation: "Programming Co-head",
     },
     {
       name: "Pranjal J Patil",
