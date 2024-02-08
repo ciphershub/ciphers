@@ -152,7 +152,7 @@ html {
 }
 
 .accordion-description {
-  padding: 6px;
+  padding: 0.3%;
   margin-bottom: 0.5%;
   overflow: hidden;
   max-height: 0;
@@ -204,33 +204,53 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-bottom: 5%;
 }
 
 .card-content {
+  margin-bottom: 0%;
   text-align: center;
-  margin-bottom: 2%;
   width: 80%;
+  height: 70%;
+  overflow: hidden;
   display: flex;
   border-radius: 20px;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
   background-color: none;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease, height 0.8s ease;
 }
 
 .card-content:hover {
-  background-color: rgba(187, 0, 255, 0.7);
+  background-color: rgba(0, 0,0);
+  height: 100%;
 }
 
+.card-content:hover .card-pfp {
+  -webkit-transform: rotateY(360deg);
+  -moz-transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
+  -o-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.card-content:hover .card-pfp {
+  transform: rotateY(360deg); /* Adjust the rotation angle as needed */
+  transition: transform 1s ease; /* Add a transition for smooth animation */
+}
+
+
 .card-pfp {
-  width: 80%; /* Adjust the width of the profile picture */
+  width: 70%; /* Adjust the width of the profile picture */
   height: auto; /* Allow the height to adjust proportionally */
   object-fit: cover;
   aspect-ratio: 1/1;
   border: 2px solid #ffbb00;
   border-radius: 50%;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   box-shadow: 2px 2px 25px 2px #ffbb00, 2px 2px 25px 2px #ffbb00;
 }
 
@@ -254,8 +274,9 @@ html {
   width: 100%;
   padding: 2%;
   border-radius: 20px;
-  background-color: #000000c5;
-  margin-bottom: 5%;
+  background-color: #3f3f3f;
+  margin-top: 15%;
+  margin-bottom: -10%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -312,6 +333,10 @@ html {
 
   .cards {
     width: 50%;
+  }
+
+  .card-content{
+    height: 100%;
   }
 
   .card-pfp {
@@ -380,6 +405,9 @@ html {
 
   .cards {
     width: 30%;
+  }
+  .card-content{
+    height: 100%;
   }
 
   .card-pfp {

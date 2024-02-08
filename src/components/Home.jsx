@@ -11,6 +11,8 @@ const Card = ({ name, image, socialLinks, designation }) => {
     <div className="cards">
       <div className="card-content">
         <img src={image} alt={`card-pfp-${name}`} className="card-pfp" />
+        <p className="name">{name}</p>
+        <p className="designation">{designation}</p>
         <div className="social-media-icons">
           {socialLinks.map((link, index) => (
             <a
@@ -23,8 +25,6 @@ const Card = ({ name, image, socialLinks, designation }) => {
             </a>
           ))}
         </div>
-        <p className="name">{name}</p>
-        <p className="designation">{designation}</p>
       </div>
     </div>
   );
