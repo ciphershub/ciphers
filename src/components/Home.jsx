@@ -122,22 +122,22 @@ const Home = () => {
     },
     {
       name: "Om Garg",
-      image: "students-card.png",
+      image: "om-pfp.png",
       socialLinks: [
         {
           name: "Instagram",
           icon: "ig-2-2.png",
-          url: "#",
+          url: "https://www.instagram.com/_om.garg_/",
         },
         {
           name: "GitHub",
           icon: "github-2-2.png",
-          url: "#",
+          url: "https://github.com/omgarg1116",
         },
         {
           name: "LinkedIn",
           icon: "li-2-2.png",
-          url: "#",
+          url: "https://www.linkedin.com/in/om-garg-6541a3276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         },
       ],
       designation: "Social Media co-Head",
@@ -260,12 +260,12 @@ const Home = () => {
         {
           name: "Instagram",
           icon: "ig-2-2.png",
-          url: "https://www.instagram.com/#",
+          url: "https://www.instagram.com/sanchit.patil__",
         },
         {
           name: "GitHub",
           icon: "github-2-2.png",
-          url: "https://www.github.com/#",
+          url: "https://github.com/Sanchitpatil08",
         },
         {
           name: "LinkedIn",
@@ -299,17 +299,17 @@ const Home = () => {
     },
     {
       name: "Pranjal J Patil",
-      image: "students-card.png",
+      image: "pranjal-pfp.png",
       socialLinks: [
         {
           name: "Instagram",
           icon: "ig-2-2.png",
-          url: "https://www.instagram.com/#",
+          url: "https://www.instagram.com/pranjalpatil1449?igsh=MW55N2RhaHFha2dibg==",
         },
         {
           name: "GitHub",
           icon: "github-2-2.png",
-          url: "https://www.github.com/#",
+          url: "https://github.com/PranjalPatil",
         },
         {
           name: "LinkedIn",
@@ -321,17 +321,17 @@ const Home = () => {
     },
     {
       name: "Arya Kasbe",
-      image: "arya-pfp.png",
+      image: "aarya-pfp.png",
       socialLinks: [
         {
           name: "Instagram",
           icon: "ig-2-2.png",
-          url: "https://www.instagram.com/#",
+          url: "https://www.instagram.com/aarya_kasbe_/",
         },
         {
           name: "GitHub",
           icon: "github-2-2.png",
-          url: "https://github.com/adwait-rao",
+          url: "https://github.com/SolarCat05",
         },
         {
           name: "LinkedIn",
@@ -348,17 +348,17 @@ const Home = () => {
         {
           name: "Instagram",
           icon: "ig-2-2.png",
-          url: "https://www.instagram.com/#",
+          url: "https://www.instagram.com/adwaitrao",
         },
         {
           name: "GitHub",
           icon: "github-2-2.png",
-          url: "https://www.github.com/#",
+          url: "https://www.github.com/adwait-rao",
         },
         {
           name: "LinkedIn",
           icon: "li-2-2.png",
-          url: "https://www.linkedin.com/in/adwait-rao-973a57222/",
+          url: "https://www.linkedin.com/in/adwait-rao-973a57222/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         },
       ],
       designation: "Innovation Co-Head",
