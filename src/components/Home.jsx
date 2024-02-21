@@ -320,6 +320,28 @@ const Home = () => {
       designation: "Startups Head",
     },
     {
+      name: "Devansh Patil",
+      image: "devansh-pfp.png",
+      socialLinks: [
+        {
+          name: "Instagram",
+          icon: "ig-2-2.png",
+          url: "https://www.instagram.com/devpatil.77/",
+        },
+        {
+          name: "GitHub",
+          icon: "github-2-2.png",
+          url: "https://github.com/Devpatil77",
+        },
+        {
+          name: "LinkedIn",
+          icon: "li-2-2.png",
+          url: "https://www.linkedin.com/in/devansh-patil-60b7b2258/",
+        },
+      ],
+      designation: "Startups Co-Head",
+    },
+    {
       name: "Arya Kasbe",
       image: "aarya-pfp.png",
       socialLinks: [

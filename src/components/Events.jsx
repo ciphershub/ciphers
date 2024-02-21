@@ -10,7 +10,7 @@ const Events = () => {
 
   // Maintain an array of registration links corresponding to each event
   const registrationLinks = [
-    "https://forms.gle/BaDKCVTydCTarHK77",
+    "https://forms.gle/BciDjdNB5iiCUEMN7",
     "#"
   ];
 
