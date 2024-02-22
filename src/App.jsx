@@ -1,6 +1,4 @@
-// App.js
-
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -11,8 +9,14 @@ import Startups from "./components/Startups";
 import ContactUs from "./components/ContactUs";
 import Preloader from "./components/Preloader";
 import "./App.css";
+import ReactGA from 'react-ga'; // Import react-ga
 
 const App = () => {
+  useEffect(() => {
+    // Track page view
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <>
       <Preloader />
