@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const Events = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 2; // Set the total number of slides
+  const totalSlides = 3; // Set the total number of slides
   const slideDuration = 7000; // Set the duration for each slide in milliseconds
 
   // Maintain an array of registration links corresponding to each event
