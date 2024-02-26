@@ -93,14 +93,14 @@ const Events = () => {
               alt="previouseventimages"
             />
           </div>
-          {/* <div class="prevEvent">
+           <div class="prevEvent">
           <img
-            src="prev-event.png"
+            src="code-launch.png"
             class="event-img"
             alt="previouseventimages"
           />
         </div>
-        <div class="prevEvent">
+        {/*<div class="prevEvent">
           <img
             src="prev-event.png"
             class="event-img"
