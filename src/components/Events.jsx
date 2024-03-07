@@ -10,7 +10,7 @@ const Events = () => {
 
   // Maintain an array of registration links corresponding to each event
   const registrationLinks = [
-    "https://forms.gle/BciDjdNB5iiCUEMN7",
+    "https://docs.google.com/forms/d/e/1FAIpQLSfGy46H4ojOHu9QQ479awCYxJMCxbRcxwPyTzHiMe2LqcG-VQ/viewform",
     "#"
   ];
 
@@ -100,13 +100,13 @@ const Events = () => {
             alt="previouseventimages"
           />
         </div>
-        {/*<div class="prevEvent">
+        <div class="prevEvent">
           <img
-            src="prev-event.png"
+            src="csjm.png"
             class="event-img"
             alt="previouseventimages"
           />
-        </div> */}
+        </div>
         </div>
       </div>
       <Footer />

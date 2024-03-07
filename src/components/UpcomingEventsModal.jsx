@@ -33,7 +33,7 @@ const UpcomingEventsModal = () => {
         <p>Upcoming Events</p>
         {/* Use Link to make the image a clickable link */}
         <Link to="/events">
-          <EventSlider totalSlides={2} />
+          <EventSlider totalSlides={3} />
         </Link>
       </div>
     </div>
