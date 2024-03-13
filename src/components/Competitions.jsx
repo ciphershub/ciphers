@@ -82,7 +82,7 @@ const Events = () => {
           <h2 class="prev-event-title prev-competition-title">Previous Competitions</h2>
           <div class="prevEvent prevCompetition">
             <img
-              src="prev-competition.png"
+              src="logic-masters.png"
               class="event-img competitions-img"
               alt="previouscompetitionimages"
             />

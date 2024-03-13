@@ -10,8 +10,7 @@ const Events = () => {
 
   // Maintain an array of registration links corresponding to each event
   const registrationLinks = [
-    "https://docs.google.com/forms/d/e/1FAIpQLSfGy46H4ojOHu9QQ479awCYxJMCxbRcxwPyTzHiMe2LqcG-VQ/viewform",
-    "#"
+    ""
   ];
 
   const previousEventRef = useRef(null); // Create a ref for the previous events section
