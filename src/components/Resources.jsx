@@ -7,6 +7,11 @@ import Footer from "./Footer";
 const Resources = () => {
   const resourceData = [
     {
+      name: "Our questions",
+      image: "github-2-2.png",
+      link: "https://github.com/ciphershub/QuestionsFromEvents",
+    },
+    {
       name: "C",
       image: "c.png",
       link: "https://www.learn-c.org/",
