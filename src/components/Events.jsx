@@ -10,7 +10,9 @@ const Events = () => {
 
   // Maintain an array of registration links corresponding to each event
   const registrationLinks = [
-    ""
+    "https://forms.gle/egNv5Y8LsBh11JT7A",
+    "#",
+    "https://forms.gle/CyMsvRbL1XSU4G6s8"
   ];
 
   const previousEventRef = useRef(null); // Create a ref for the previous events section
