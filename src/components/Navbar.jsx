@@ -1,4 +1,3 @@
-// Navbar.js
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
@@ -27,7 +26,13 @@ const Navbar = () => {
           <Link to="/">Home</Link>
           <Link to="/events">Events</Link>
           <Link to="/competitions">Competitions</Link>
-          <Link to="/resources">Resources</Link>
+          <div className="dropdown">
+            <button className="dropbtn">RESOURCES</button>
+            <div className="dropdown-content">
+              <Link to="/resources?type=programming"><nobr>Programming Resources</nobr></Link>
+              <Link to="/resources?type=higher_education"><nobr>Higher Education Resources</nobr></Link>
+            </div>
+          </div>
           <Link to="/startups">Startups</Link>
           <Link to="/contactus">
             <nobr>Contact Us</nobr>
@@ -50,8 +55,11 @@ const Navbar = () => {
         <Link to="/competitions" onClick={toggleMenu}>
           Competitions
         </Link>
-        <Link to="/resources" onClick={toggleMenu}>
-          Resources
+        <Link to="/resources?type=higher_education" onClick={toggleMenu}>
+          Higher Education Resources
+        </Link>
+        <Link to="/resources?type=programming" onClick={toggleMenu}>
+          Programming Resources
         </Link>
         <Link to="/startups" onClick={toggleMenu}>
           Startups

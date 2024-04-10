@@ -84,6 +84,50 @@ html {
   text-transform: uppercase;
 }
 
+/* Add this CSS to make the dropdown appear on hover */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown button {
+  background-color: #000000;
+  border: none;
+  border-radius: none;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Source Code Pro";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dropdown button:hover {
+  color: var(--secondary-color);
+  text-decoration: underline overline 2px var(--primary-color);
+  text-underline-offset: 5px;
+  transition: text-decoration 0.5s ease-in-out;
+}
+
+.dropdown-content {
+  width: fit-content;
+  display: none;
+  padding: 5%;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Add this CSS to hide the dropdown options and only show the "Resources" tab */
+.dropdown-content > * {
+  display: block;
+}
+
 .burger-menu {
   display: none;
 }
@@ -111,11 +155,11 @@ html {
   height: 33%;
 }
 
-.slider2 img{
- width: 100%;
- border-radius: 2%;
- border-bottom: 3px solid var(--primary-color);
- border-top: 3px solid var(--primary-color);
+.slider2 img {
+  width: 100%;
+  border-radius: 2%;
+  border-bottom: 3px solid var(--primary-color);
+  border-top: 3px solid var(--primary-color);
 }
 
 .upcoming-events-modal.closed {
@@ -138,7 +182,7 @@ html {
   margin-bottom: -3%;
 }
 
-.closed .close-button{
+.closed .close-button {
   background-color: #ffffff;
 }
 
@@ -169,6 +213,19 @@ html {
     gap: 60%;
   }
 
+  .dropdown button {
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    margin-left: 13%;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .dropdown-content {
+    padding: 0%;
+  }
+  
   .logo {
     margin-top: 0rem;
     height: 80%;
@@ -275,24 +332,24 @@ html {
     transform: rotate(-90deg);
     background: none;
   }
-  
+
   .upcoming-events-modal.closed {
     transform: rotate(-90deg) translateY(27%);
     background: transparent;
   }
 
-  .closed .close-button{
-  background: transparent;}
+  .closed .close-button {
+    background: transparent;
+  }
 
   .upcoming-events-modal p {
     display: none;
   }
-.slider2 img{
-  width: 100%;
-  rotate: 90deg;
-  margin-top: 20%;
-}
-  
+  .slider2 img {
+    width: 100%;
+    rotate: 90deg;
+    margin-top: 20%;
+  }
 }
 
 @media screen and (min-width: 450px) and (max-width: 1300px) {
