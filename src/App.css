@@ -45,10 +45,11 @@ html {
 }
 
 .navbar a {
+  margin-left: -1rem;
   text-decoration: none;
   color: var(--text-color); /* Font color for normal state */
   font-weight: bold;
-  font-size: 20px; /* Adjust the font size as needed */
+  font-size: 16px; /* Adjust the font size as needed */
   transition: color 0.5s ease-in-out;
 }
 
@@ -65,7 +66,7 @@ html {
 
 .logo {
   height: 100%;
-  margin-left: -4em;
+  margin-left: -10em;
   background: none;
   border: none;
   margin-top: -1.2em;
@@ -98,7 +99,10 @@ html {
   text-transform: capitalize;
   font-family: "Source Code Pro";
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
+  margin-left: -1.25rem;
+  margin-right: -0.5rem;
+  margin-top: -0.2rem;
 }
 
 .dropdown button:hover {
@@ -225,7 +229,7 @@ html {
   .dropdown-content {
     padding: 0%;
   }
-  
+
   .logo {
     margin-top: 0rem;
     height: 80%;
